@@ -8,7 +8,10 @@ Well, you've come to the right place.
 
 ## Install
 
-cp ./systemd-env.sh /usr/sbin/systemd-env
+```
+curl --fail --location --silent --show-error https://raw.githubusercontent.com/karlkfi/systemd-env/master/systemd-env.sh | sudo tee /usr/sbin/systemd-env > /dev/null && \
+sudo chmod a+x /usr/sbin/systemd-env
+```
 
 ## Usage
 
@@ -27,7 +30,7 @@ systemd-env dcos-mesos-slave
 Run a script or command with a service's environment:
 
 ```
-./systemd-env.sh dcos-mesos-slave ./script.sh
+systemd-env dcos-mesos-slave ./script.sh
 ```
 
 ## TODO
