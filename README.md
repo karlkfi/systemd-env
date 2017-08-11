@@ -9,8 +9,10 @@ Well, you've come to the right place.
 ## Install
 
 ```
-curl --fail --location --silent --show-error https://raw.githubusercontent.com/karlkfi/systemd-env/master/systemd-env.sh | sudo tee /usr/sbin/systemd-env > /dev/null && \
-sudo chmod a+x /usr/sbin/systemd-env
+curl --fail --location --silent --show-error \
+  https://raw.githubusercontent.com/karlkfi/systemd-env/master/systemd-env.sh | \
+  sudo tee /usr/sbin/systemd-env > /dev/null && \
+  sudo chmod a+x /usr/sbin/systemd-env
 ```
 
 ## Usage
