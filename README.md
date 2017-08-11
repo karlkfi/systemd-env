@@ -17,22 +17,16 @@ curl --fail --location --silent --show-error \
 
 ## Usage
 
-Find out what resources your mesos-agent is *actually* gonna use:
-
-```
-systemd-env dcos-mesos-slave | grep MESOS_RESOURCES
-```
-
 Print the service's env:
 
 ```
-systemd-env dcos-mesos-slave
+systemd-env <service-name>
 ```
 
 Run a script or command with a service's environment:
 
 ```
-systemd-env dcos-mesos-slave ./script.sh
+systemd-env <service-name> <command>
 ```
 
 ## TODO
